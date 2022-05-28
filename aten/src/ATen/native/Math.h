@@ -2348,6 +2348,6 @@ static inline C10_HOST_DEVICE T bessel_j0_forward(T x) {
     p = p * std::cos(x - FRAC_PI_4) - T(5.0) / x * q * std::sin(x - FRAC_PI_4);
 
     return p * SQRT_FRAC_2_PI / std::sqrt(x);
-} // bessel_j0
+} // bessel_j0_forward(T x)
 
 C10_CLANG_DIAGNOSTIC_POP()
